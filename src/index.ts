@@ -215,7 +215,7 @@ export class Rating implements OnInit, ControlValueAccessor, Validator {
     // -------------------------------------------------------------------------
 
     @HostListener("keydown", ["$event"])
-    onKeydown(event: KeyboardEvent): void {
+    onKeydown(event:any): void {
         if ([37, 38, 39, 40].indexOf(event.which) === -1 || this.hovered)
             return;
 
